@@ -1,0 +1,141 @@
+:root {
+--orange: #d87d4a;
+--black: #101010;
+--gray: #F1F1F1;
+--gray-light: #FAFAFA;
+--orange-hover: #fbaf85;
+--thite: #FFFFFF;
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Manrope-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2'),
+        url('../fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Manrope","Arial",sans-serif;
+    /* background-color: var(--orange); */
+    margin: 0
+}
+main{
+    flex-grow: 1;
+}
+/* div{
+    flex-grow: 2;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--black);
+    padding: 35px 0;
+  }
+  .header__logo {
+    width: 143px;
+    height: 25px;
+  }
+  
+  .header__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+    margin: 0;
+    color: #F1F1F1;
+  }
+  .header__link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .header__link:hover {
+    text-decoration: underline;
+  }
+  .header__shopping {
+    width: 24px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .header__shopping:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+  .footer {
+    border-top: 2px solid var(--black); 
+    background-color: var(--black); 
+    height: 150px; 
+    padding: auto;
+    text-align: center;
+}
+
+.footer_text{
+    color: #F1F1F1;
+    margin-bottom: 10px;
+}
+ .footer__content{
+    max-width: 1200px;
+    margin:0 auto
+ }
+ 
